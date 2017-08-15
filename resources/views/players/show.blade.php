@@ -1,9 +1,6 @@
-<!doctype html>
-<html>
-    <head>
-    <title></title>
-    </head>
-    <body>
+@extends('layouts.master')
+    @section('content')
+
         <h2>{{ $player->first_name }} {{ $player->last_name }}</h2>
        
           
@@ -11,5 +8,4 @@
 
             <p><a href='/teams/{{ $player->team_id }}'>{{ $player->team->name }}</a></p>
 			
-    </body>
-</html>
+@endsection

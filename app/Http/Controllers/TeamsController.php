@@ -19,4 +19,6 @@ class TeamsController extends Controller
 
 		return view('teams.show', ['team' => $team]);
 	}
+
+	
 }

@@ -13,4 +13,12 @@
 
 Route::get('/', 'TeamsController@index');
 Route::get('/teams/{id}', 'TeamsController@show');
+
 Route::get('/players/{id}', 'PlayersController@show');
+
+Route::get('/register', 'RegistersController@create');
+Route::post('/register', 'RegistersController@store');
+
+Route::get('/login', 'LoginController@create');
+Route::post('/login', 'LoginController@store');
+Route::get('/logout', 'LoginController@destroy');
